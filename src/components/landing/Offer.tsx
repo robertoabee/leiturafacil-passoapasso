@@ -1,4 +1,4 @@
-import mockup from "@/assets/mockup-kit.png";
+import mockupAsset from "@/assets/mockup-kit.png.asset.json";
 import { PRICE } from "@/content/site";
 import { CTAButton } from "./CTAButton";
 
@@ -21,12 +21,12 @@ export function Offer() {
 
         <div className="mx-auto mt-8 max-w-2xl rounded-3xl bg-card p-6 shadow-card sm:p-9">
           <img
-            src={mockup}
+            src={mockupAsset.url}
             alt="Materiais e bônus do Bê a Bá da Leitura"
             loading="lazy"
-            width={1280}
-            height={960}
-            className="mx-auto w-full max-w-md"
+            width={1672}
+            height={941}
+            className="mx-auto w-full max-w-xl"
           />
 
           <h3 className="mt-6 text-center font-display text-xl font-extrabold">
