@@ -17,29 +17,37 @@ export const BRAND = {
   year: 2026,
 };
 
+import material1 from "@/assets/material-1.png.asset.json";
+import material2 from "@/assets/material-2.png.asset.json";
+import material3 from "@/assets/material-3.png.asset.json";
+
 export const MATERIALS = [
   {
     number: "Material 01",
-    title: "Nome do material 01",
-    description: "Descrição curta do material 01.",
+    title: "Práticas para início da alfabetização",
+    description:
+      "Atividades iniciais para dar os primeiros passos na leitura com segurança.",
     pages: "00 páginas de atividades",
-    image: null as string | null, // TODO: mockup da capa
+    image: material1.url as string | null,
   },
   {
     number: "Material 02",
-    title: "Nome do material 02",
-    description: "Descrição curta do material 02.",
+    title: "Leitura de palavras simples e complexas",
+    description:
+      "Sequência progressiva para avançar das palavras simples às complexas.",
     pages: "00 páginas de atividades",
-    image: null as string | null,
+    image: material2.url as string | null,
   },
   {
     number: "Material 03",
-    title: "Nome do material 03",
-    description: "Descrição curta do material 03.",
+    title: "Atividades para melhorar a leitura",
+    description:
+      "Atividades para fortalecer a fluência e a autonomia na leitura.",
     pages: "00 páginas de atividades",
-    image: null as string | null,
+    image: material3.url as string | null,
   },
 ];
+
 
 export const BONUSES = [
   {
