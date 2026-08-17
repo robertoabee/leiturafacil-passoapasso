@@ -1,24 +1,58 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Hero } from "@/components/landing/Hero";
+import { ProblemSection } from "@/components/landing/ProblemSection";
+import { SolutionSection } from "@/components/landing/SolutionSection";
+import { LearningPath } from "@/components/landing/LearningPath";
+import { ProductMaterials } from "@/components/landing/ProductMaterials";
+import { Benefits } from "@/components/landing/Benefits";
+import { Audience } from "@/components/landing/Audience";
+import { HowItWorks } from "@/components/landing/HowItWorks";
+import { Bonuses } from "@/components/landing/Bonuses";
+import { Offer } from "@/components/landing/Offer";
+import { Guarantee } from "@/components/landing/Guarantee";
+import { FAQSection } from "@/components/landing/FAQSection";
+import { FinalCTA } from "@/components/landing/FinalCTA";
+import { Footer } from "@/components/landing/Footer";
+import { StickyCTA } from "@/components/landing/StickyCTA";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const title = "Bê a Bá da Leitura | Tio Beto Educa";
+const description =
+  "Trilha de atividades em PDF para professores alfabetizadores desenvolverem a leitura das crianças passo a passo. Pronta para imprimir e aplicar.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main>
+      {/* Espaço reservado: Pixel da Meta / Google Analytics / eventos de conversão */}
+      <Hero />
+      <ProblemSection />
+      <SolutionSection />
+      <LearningPath />
+      <ProductMaterials />
+      <Benefits />
+      <Audience />
+      <HowItWorks />
+      {/* Espaço reservado: vídeo de apresentação e depoimentos reais */}
+      <Bonuses />
+      <Offer />
+      <Guarantee />
+      <FAQSection />
+      <FinalCTA />
+      <Footer />
+      <StickyCTA />
+    </main>
   );
 }
