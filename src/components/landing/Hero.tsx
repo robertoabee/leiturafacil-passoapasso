@@ -1,4 +1,4 @@
-import mockup from "@/assets/mockup-kit.png";
+import mockupAsset from "@/assets/mockup-kit.png.asset.json";
 import { CTAButton } from "./CTAButton";
 
 const benefits = [
@@ -40,11 +40,11 @@ export function Hero() {
 
         <div className="mt-8 rounded-3xl bg-card p-4 shadow-card sm:p-8">
           <img
-            src={mockup}
+            src={mockupAsset.url}
             alt="Os três materiais do Bê a Bá da Leitura reunidos"
-            width={1280}
-            height={960}
-            className="mx-auto w-full max-w-xl"
+            width={1672}
+            height={941}
+            className="mx-auto w-full max-w-3xl"
           />
         </div>
 
