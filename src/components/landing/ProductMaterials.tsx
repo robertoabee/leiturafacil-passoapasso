@@ -45,7 +45,12 @@ export function ProductMaterials() {
 
         <p className="mt-8 rounded-2xl bg-muted px-5 py-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
           Você recebe todos os materiais em formato digital PDF para baixar,
-          imprimir e utilizar de acordo com a necessidade dos seus alunos.
+          imprimir e utilizar em sala de aula, no reforço escolar ou no
+          atendimento individual, de acordo com a necessidade dos seus alunos.
+        </p>
+
+        <p className="mt-6 font-display text-sm font-bold text-primary">
+          {MICRO.materials}
         </p>
       </div>
     </section>
