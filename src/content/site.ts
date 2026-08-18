@@ -8,7 +8,21 @@ export const CHECKOUT_URL = "#checkout-hotmart"; // TODO: colar a URL do checkou
 export const PRICE = {
   current: "R$ 37,00",
   short: "R$37",
-  note: "à vista",
+  note: "Pagamento único",
+  // Valor de referência (ancoragem). Só exiba publicamente se houver
+  // justificativa comercial real para esse valor.
+  reference: "R$ 79,90",
+  showReference: true,
+  anchorNote:
+    "Você recebe todo o material + bônus por menos da metade do valor de referência.",
+};
+
+// Microgatilhos usados antes dos CTAs
+export const MICRO = {
+  hero: "Sua próxima atividade de leitura já pode estar pronta.",
+  materials: "Pare de perder horas procurando atividades soltas.",
+  offer: "Tenha uma sequência pronta para consultar sempre que precisar.",
+  final: "Baixe hoje e já deixe suas próximas atividades organizadas.",
 };
 
 export const BRAND = {
