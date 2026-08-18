@@ -43,6 +43,7 @@ function Index() {
       <SolutionSection />
       <LearningPath />
       <ProductMaterials />
+      <SocialProof />
       <Benefits />
       <Audience />
       <HowItWorks />
