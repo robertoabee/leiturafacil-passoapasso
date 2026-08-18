@@ -63,19 +63,50 @@ export const MATERIALS = [
 ];
 
 
-export const BONUSES = [
+import bonusImg from "@/assets/bonus-fichas.png.asset.json";
+
+export const BONUS = {
+  tag: "Bônus especial",
+  title: "Fichas de Leitura das Letras",
+  description:
+    "Um material complementar para reforçar o reconhecimento das letras e estimular a leitura de forma simples e prática.",
+  seal: "INCLUSO SEM CUSTO ADICIONAL",
+  image: bonusImg.url,
+};
+
+// EXEMPLOS DE LAYOUT — substituir por depoimentos reais quando existirem.
+// Preparado para receber prints (WhatsApp, Instagram): preencha `image`.
+export const TESTIMONIAL_EXAMPLES: {
+  text: string;
+  role: string;
+  image?: string;
+}[] = [
   {
-    tag: "Bônus 01",
-    title: "Diagnóstico de Leitura",
-    description:
-      "Um material complementar para auxiliar na identificação das principais dificuldades de leitura da criança.",
+    text: "Finalmente consegui organizar melhor as atividades de leitura sem precisar ficar procurando materiais diferentes todos os dias.",
+    role: "Professora do 1º ano",
   },
   {
-    tag: "Bônus 02",
-    title: "Fichas de Sílabas",
-    description:
-      "Material prático para reforçar reconhecimento, formação e leitura de sílabas.",
+    text: "A sequência das atividades facilitou muito meu trabalho com os alunos que ainda estavam inseguros na leitura.",
+    role: "Professora alfabetizadora",
   },
+  {
+    text: "Gostei principalmente porque consigo escolher as atividades de acordo com a dificuldade de cada criança.",
+    role: "Professora de reforço escolar",
+  },
+  {
+    text: "Material simples de aplicar, organizado e muito prático para utilizar no reforço escolar.",
+    role: "Pedagoga",
+  },
+];
+
+export const OFFER_INCLUDES = [
+  "Material 01 do Bê a Bá da Leitura",
+  "Material 02 do Bê a Bá da Leitura",
+  "Material 03 do Bê a Bá da Leitura",
+  "Trilha progressiva de atividades",
+  "Arquivos digitais em PDF",
+  "Acesso imediato",
+  "Bônus: Fichas de Leitura das Letras",
 ];
 
 export const FAQ = [
