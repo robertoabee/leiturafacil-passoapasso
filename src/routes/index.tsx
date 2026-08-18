@@ -4,6 +4,7 @@ import { ProblemSection } from "@/components/landing/ProblemSection";
 import { SolutionSection } from "@/components/landing/SolutionSection";
 import { LearningPath } from "@/components/landing/LearningPath";
 import { ProductMaterials } from "@/components/landing/ProductMaterials";
+import { SocialProof } from "@/components/landing/SocialProof";
 import { Benefits } from "@/components/landing/Benefits";
 import { Audience } from "@/components/landing/Audience";
 import { HowItWorks } from "@/components/landing/HowItWorks";
@@ -42,6 +43,7 @@ function Index() {
       <SolutionSection />
       <LearningPath />
       <ProductMaterials />
+      <SocialProof />
       <Benefits />
       <Audience />
       <HowItWorks />
