@@ -1,4 +1,4 @@
-import { MATERIALS } from "@/content/site";
+import { MATERIALS, MICRO } from "@/content/site";
 
 export function ProductMaterials() {
   return (
